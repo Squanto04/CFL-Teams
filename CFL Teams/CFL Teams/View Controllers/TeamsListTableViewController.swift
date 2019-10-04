@@ -12,6 +12,7 @@ class TeamsListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         CFLController.fetchTeams {
             self.reloadTableView()
         }
